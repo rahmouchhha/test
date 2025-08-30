@@ -1,0 +1,113 @@
+ h1 {
+                color: rgb(255, 0, 217);
+                font-family: roboto;
+                text-align: center;
+            }
+
+            .title {
+                color: blue;
+            }
+            #black-bordered {
+                color: black;
+                border: 5px dashed blue;
+
+            }
+
+           /* multiple selectors with the same css*/
+
+            /* Selecting multiple HTML element types */
+            h1, p{
+               /* border: 1px solid black;*/
+            }
+
+            /* Selecting styles to be applied to several classes */
+            .FirstItem, .LastItem {
+                font-size: 1.2em;
+            }
+
+            /* Using multiple Kinds of selectors */
+            h3, .red, #redElement {
+                color: red
+            }
+
+          /*  1. Descendant Combinator:*/
+        .box p  {
+                        color: red;
+                }  
+        
+                .box p i  {
+                        color: rgb(13, 0, 255);
+                } 
+
+
+        /*  2.Child Combinator: The child combinator (>) is placed between two CSS selectors. It only matches those elements matched by the second selector that are the direct children of elements matched by the first. Descendent elements further down the hierarchy don't match. For example,
+         to select only <p> elements that are direct children of <article> elements: */
+        article > p {
+    font-weight: bold;
+    background-color: #17bb56;
+    color: #fff;
+    padding: .5em;
+}
+
+/*3. Adjacent Sibling Combinator:
+The adjacent sibling selector (+) is used to select something if it is right next to another element at the same level of the hierarchy.
+ For example, to select all <p> elements that come right after <h1> elements:
+*/
+h1 + p {
+    font-weight: bold;
+    background-color: #551ca5;
+    color: #e70a0a;
+    padding: .5e*m;
+}   
+
+/*4. General Sibling Combinator
+If you want to select siblings of an element even if they are not directly adjacent, then you can use the general sibling combinator (~). To select all <p> elements that come
+ anywhere after <h1> elements, we'd do this: HTML */
+ h4 ~ p {
+    font-weight: bold;
+    background-color:red;
+    color: #fff;
+    padding: .5em;
+}
+
+
+
+/* pour les clicks sur les liens ou boutton marked as clicked */
+   /* unvisited link */
+      a:link {
+          color: tomato;
+      }
+      /* visited link */
+      a:visited {
+          color: tomato;
+      }
+      /* mouse over element */
+      div:hover {
+          color: tomato;
+      } 
+      /* selected link */
+      a:active{
+          color: #0000FF
+      }
+    div{
+    display: block;
+
+    }
+   /* p {
+  height: 100px;
+  width: 100px;
+  background: red;
+  color: white;
+}*/
+ .test {
+        width: 50px;
+        height: 50px;
+        border: 1px solid red;
+        display: inline-block;
+        background-color: #0000FF;
+      }
+
+      /* padding 
+      
+      microsoft expression web 4*/
+      /*  padding: <padding-top> || <padding-right> || <padding-bottom> || <padding-left> */

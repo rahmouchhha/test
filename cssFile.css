@@ -1,0 +1,30 @@
+header{ 
+    color : yellow ;
+    background-color: #4CAF50;  /* Vert avec code hexadécimal */
+
+}
+body{ 
+font-family: 'Courier New', Courier, monospace;
+line-height: 20px;
+word-spacing: 10px;
+text-align: center;
+
+}
+
+a{
+    text-decoration: none;
+}
+main{ 
+    color : red ;
+
+}
+dl{color : black}
+li {
+     list-style: none;}
+
+footer{ color: gray; background-color: blueviolet;}
+.div2{
+    
+      background-image: url("background.jpeg"); /* Image locale */
+      height : 200px;
+}
